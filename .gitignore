@@ -1,0 +1,10 @@
+node_modules/*
+windows/*
+axios/*
+bootstrap/*
+node_modules copy 2/*
+node_modules copy/*
+socket.io-adapter/*
+socket.io-client/*
+socket.io-parser/*
+socket.io/*

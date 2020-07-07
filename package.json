@@ -1,0 +1,97 @@
+{
+  "name": "limac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
+  },
+  "author": "hhhpv",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "electron": "^9.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
+    "electron-builder": "^22.7.0"
+  },
+  "build": {
+    "appId": "com.VCApp",
+    "productName": "LIMAC Video Chat",
+    "directories": {
+      "output": "windows"
+    },
+    "target": "NSIS",
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  },
+  "dependencies": {
+    "electron-notifications": "^1.0.0",
+    "ip": "^1.1.5",
+    "socket.io": "^2.3.0"
+  },
+  "config": {
+    "msvs_version": 2017
+  },
+  "files": [
+    "**/*"
+  ],
+  "extraFiles": [
+    {
+      "from": "node_modules",
+      "to": "node_modules",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "lib",
+      "to": "lib",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "axios",
+      "to": "axios",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "socket.io",
+      "to": "socket.io",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "socket.io-adapter",
+      "to": "socket.io-adapter",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "socket.io-client",
+      "to": "socket.io-client",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "socket.io-parser",
+      "to": "socket.io-parser",
+      "filter": [
+        "**/*"
+      ]
+    },
+    "global.json",
+    "turnConfig.json",
+    "session.json"
+  ]
+}
